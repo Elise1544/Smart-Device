@@ -1,0 +1,51 @@
+.office {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 35px;
+    margin-left: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  @media (min-width: $min-width) and (max-width: $mobile-width) {
+    margin-top: 15px;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-bottom: 11px;
+
+    line-height: 25px;
+  }
+}
+
+.office h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.office p {
+  margin-top: 10px;
+  margin-bottom: 4px;
+
+  @media (min-width: $min-width) and (max-width: $mobile-width) {
+    margin-top: 17px;
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+}
+
+.office a {
+  margin: 3px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $min-width) and (max-width: $mobile-width) {
+    margin: 0;
+  }
+}

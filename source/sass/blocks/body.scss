@@ -1,0 +1,17 @@
+.body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Mono", "Courier", monospace;
+}
+
+.body__header {
+  position: absolute;
+  top: 31px;
+  left: calc(50% - 709px);
+
+  @media (max-width:$tablet-width) {
+    top: 20px;
+    left: 0;
+  }
+}

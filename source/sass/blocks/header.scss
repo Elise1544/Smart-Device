@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  background-color: transparent;
+
+  width: 75%;
+
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.header__logo {
+  margin-right: 35%;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 55%;
+    margin-left: 25px;
+  }
+
+  @media (min-width: $min-width) and (max-width: $mobile-width) {
+    content: url(../../img/logo_mobile.svg);
+    width: 38px;
+    height: 38px;
+    margin-left: 17px;
+    margin-right: 49%;
+  }
+}
+
+.header button {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
