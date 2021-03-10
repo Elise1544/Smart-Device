@@ -91,7 +91,7 @@
     width: 279px;
   }
 
-  @media (max-width: $mobile-width)  {
+  @media (max-width: $mobile-width) {
     margin-top: 3px;
     width: 290px;
   }
@@ -127,15 +127,14 @@
   background-color: transparent;
   position: absolute;
   content: "";
-  background-image: url(../../img/checkbox_off.svg);
+  background-image: url("../img/checkbox_off.svg");
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
   top: 0;
   left: 0;
-
 }
 
 .form__checkbox .checkbox:checked {
-  background-image: url(../../img/checkbox_on.svg);
+  background-image: url("../img/checkbox_on.svg");
 }

@@ -44,7 +44,6 @@
 }
 
 .sections__list--closed {
-
   @media (max-width: $mobile-width) {
     display: none;
   }
@@ -53,7 +52,7 @@
 .sections li {
   width: 50%;
 
-  @media (max-width: $tablet-width){
+  @media (max-width: $tablet-width) {
     width: 100%;
   }
 }

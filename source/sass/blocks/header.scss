@@ -19,7 +19,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    content: url(../../img/logo_mobile.svg);
+    content: url("../img/logo_mobile.svg");
     width: 38px;
     height: 38px;
     margin-left: 17px;

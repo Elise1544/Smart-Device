@@ -87,49 +87,49 @@
 }
 
 .products__items--production {
-  background-image: url(../../img/production.png);
+  background-image: url("../img/production.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/production2x.png);
+    background-image: url("../img/production2x.png");
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/production-tablet.png);
+    background-image: url("../img/production-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/production-tablet2x.png);
+      background-image: url("../img/production-tablet2x.png");
     }
   }
 }
 
 .products__items--installation {
-  background-image: url(../../img/installation.png);
+  background-image: url("../img/installation.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/installation2x.png);
+    background-image: url("../img/installation2x.png");
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/installation-tablet.png);
+    background-image: url("../img/installation-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/installation-tablet2x.png);
+      background-image: url("../img/installation-tablet2x.png");
     }
   }
 }
 
 .products__items--accessories {
-  background-image: url(../../img/accessories.png);
+  background-image: url("../img/accessories.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/accessories2x.png);
+    background-image: url("../img/accessories2x.png");
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/accessories-tablet.png);
+    background-image: url("../img/accessories-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/accessories-tablet2x.png);
+      background-image: url("../img/accessories-tablet2x.png");
     }
   }
 }
@@ -163,7 +163,7 @@
 .products__items::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/Vector.svg);
+  background-image: url("../img/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $accent;

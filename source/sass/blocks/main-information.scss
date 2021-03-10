@@ -1,7 +1,7 @@
 .main-information {
   position: relative;
   background-color: $black;
-  background-image: url(../../img/mask-main.png);
+  background-image: url("../img/mask-main.png");
   padding-bottom: 90px;
 
   @media (max-width: $tablet-width) {
@@ -104,7 +104,7 @@
   right: 9%;
 
   @media (max-width: $tablet-width) {
-    content: url("../../img/boards-tablet.webp");
+    content: url("../img/boards-tablet.webp");
     width: 335px;
     height: 470px;
     top: 0;
@@ -112,12 +112,12 @@
     overflow: hidden;
 
     @media (min-resolution: 2dppx) {
-      content: url("../../img/boards-tablet2x.webp");
+      content: url("../img/boards-tablet2x.webp");
     }
   }
 
   @media (max-width: $mobile-width) {
-    content: url("../../img/boards-mobile.webp");
+    content: url("../img/boards-mobile.webp");
     width: 300px;
     height: 440px;
     top: 0;
@@ -125,7 +125,7 @@
     overflow: hidden;
 
     @media (min-resolution: 2dppx) {
-      content: url("../../img/boards-mobile2x.webp");
+      content: url("../img/boards-mobile2x.webp");
     }
   }
 }
