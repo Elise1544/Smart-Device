@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: "PT Mono", "Courier", monospace;
   font-weight: 400;
 }
@@ -10,7 +11,7 @@
   position: absolute;
   z-index: 1;
   top: 31px;
-  left: calc(50% - 709px);
+  left: 13%;
 
   @media (max-width:$tablet-width) {
     top: 20px;

@@ -1,0 +1,18 @@
+.wrap {
+  background-image: url(../../img/mask-triangles.svg);
+  margin-top: -30px;
+  padding: 111px 5% 51px 5%;
+
+  @media (max-width: $tablet-width) {
+    background-image: url(../../img/mask-triangles-tablet.svg);
+    margin-top: 0;
+    padding: 22px 1% 78px 1%;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url(../../img/mask-triangles-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom 29%;
+    padding: 11px 1% 54px 1%;
+  }
+}

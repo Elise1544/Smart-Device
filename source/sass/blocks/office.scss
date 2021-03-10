@@ -1,6 +1,5 @@
 .office {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   margin-left: 24px;
 
   @media (max-width: $tablet-width) {
@@ -9,7 +8,7 @@
     letter-spacing: -0.5px;
   }
 
-  @media (min-width: $min-width) and (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-top: 15px;
     margin-left: 0;
     padding-left: 10px;
@@ -27,11 +26,23 @@
   text-transform: uppercase;
 }
 
+.office__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.office__wrap--closed {
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .office p {
   margin-top: 10px;
   margin-bottom: 4px;
 
-  @media (min-width: $min-width) and (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-top: 17px;
     margin-bottom: 0;
     padding-right: 10px;
@@ -45,7 +56,7 @@
     margin-left: 0;
   }
 
-  @media (min-width: $min-width) and (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin: 0;
   }
 }

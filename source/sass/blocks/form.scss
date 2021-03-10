@@ -1,0 +1,141 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: 8%;
+  padding: 20px 0 112px 10px;
+  width: 42%;
+  min-width: 600px;
+
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    width: 94%;
+    padding: 20px 0 105px 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1% 45px 1%;
+    min-width: 300px;
+  }
+}
+
+.form input,
+.form textarea {
+  padding: 12px 18px;
+
+  background-color: $light-white;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+
+  @media (max-width: $tablet-width) {
+    padding: 12px 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 12px 18px;
+  }
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: $white;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form input {
+  margin: 20px 25px 20px 5px;
+  width: 270px;
+  height: 50px;
+
+  @media (max-width: $tablet-width) {
+    width: 278px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 15px 0;
+
+    width: 290px;
+  }
+}
+
+.form textarea {
+  margin: 20px 0 20px 5px;
+  width: 570px;
+  height: 154px;
+
+  @media (max-width: $tablet-width) {
+    width: 590px;
+    height: 159px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    height: 104px;
+  }
+}
+
+.form button {
+  margin-top: 18px;
+  margin-left: 5px;
+  width: 270px;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 24px;
+    margin-left: 2px;
+    width: 279px;
+  }
+
+  @media (max-width: $mobile-width)  {
+    margin-top: 3px;
+    width: 290px;
+  }
+}
+
+.form__checkbox {
+  position: relative;
+  margin-left: 39px;
+  margin-top: 27px;
+  padding-left: 32px;
+  width: 40%;
+  cursor: pointer;
+
+  font-size: 14px;
+  line-height: 15px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 42px;
+    margin-top: 33px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 5px;
+    width: 100%;
+  }
+}
+
+.form__checkbox .checkbox {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  content: "";
+  background-image: url(../../img/checkbox_off.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+
+}
+
+.form__checkbox .checkbox:checked {
+  background-image: url(../../img/checkbox_on.svg);
+}

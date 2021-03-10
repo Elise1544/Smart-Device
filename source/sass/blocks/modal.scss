@@ -1,0 +1,83 @@
+.modal {
+  display: none;
+}
+
+.modal--open {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 490px;
+  height: 605px;
+  top: 136px;
+  left: calc(50% - 245px);
+
+  padding: 8px 39px 36px 39px;
+
+  background-color: $accent;
+}
+
+.modal .form {
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal h2 {
+  margin-bottom: 5px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 39px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.modal p {
+  margin: 8px 15px 20px 0;
+
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal input,
+.modal textarea {
+  margin: 15px 0;
+  padding: 12px 25px;
+
+  width: 411px;
+}
+
+.modal input {
+  height: 51px;
+}
+
+.modal textarea {
+  height: 104px;
+}
+
+.modal .button {
+  margin: 12px 0;
+
+  width: 411px;
+}
+
+.modal .form__checkbox {
+  margin-left: 0;
+  margin-top: 24px;
+  padding-left: 50px;
+
+  width: 99%;
+}
+
+.modal .close {
+  position: absolute;
+  background-image: url(../../img/close.svg);
+  width: 16px;
+  height: 16px;
+  top: 20px;
+  right: 22px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

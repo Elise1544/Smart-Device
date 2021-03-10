@@ -2,7 +2,7 @@
   display: flex;
   background-color: transparent;
 
-  width: 75%;
+  width: 74%;
 
   color: $white;
 
@@ -12,23 +12,25 @@
 }
 
 .header__logo {
-  margin-right: 35%;
+  margin-right: auto;
 
   @media (max-width: $tablet-width) {
-    margin-right: 55%;
     margin-left: 25px;
   }
 
-  @media (min-width: $min-width) and (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     content: url(../../img/logo_mobile.svg);
     width: 38px;
     height: 38px;
     margin-left: 17px;
-    margin-right: 49%;
   }
 }
 
 .header button {
+  cursor: pointer;
+  height: 100%;
+  margin-right: 6px;
+
   @media (max-width: $tablet-width) {
     display: none;
   }

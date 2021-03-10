@@ -9,7 +9,7 @@
     margin: 18px 10px 20px auto;
   }
 
-  @media (min-width: $min-width) and (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin: 10px auto 20px auto;
   }
 }

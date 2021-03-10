@@ -1,20 +1,23 @@
 .contact-us {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  min-width: 37%;
   padding: 0 9px;
 
   @media (max-width:$tablet-width) {
     margin-top: 12px;
     padding-left: 7px;
+    min-width: 17%;
   }
 
-  @media (min-width: $min-width) and (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-top: 4px;
   }
 }
 
 .contact-us li {
-  margin: 0 41px;
+  margin: 0 auto;
   list-style: none;
   padding: 0;
 
@@ -22,7 +25,7 @@
     margin: 0 15px;
   }
 
-  @media (min-width: $min-width) and (max-width: $mobile-width)  {
+  @media (max-width: $mobile-width)  {
     margin: 0 12px;
   }
 }
