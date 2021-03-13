@@ -91,6 +91,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    display: block;
     margin: 14px auto 0 auto;
     width: 77%;
     text-align: center;
@@ -162,7 +163,6 @@
     top: 260px;
   }
 }
-
 
 .footer__button {
   display: none;

@@ -135,16 +135,18 @@
     </section>
 
     <section class="form-section" id="form">
-      <h2>Остались вопросы? Задайте их нам!</h2>
-      <p>Мы проконсультируем Вас бесплатно</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="GET" autocomplete="off">
-        <label>
-          <input type="text" name="name" placeholder="Имя" required>
-        </label>
-        <label>
-          <input class="form__phone" type="tel" name="phone" minlength="16" maxlength="16" placeholder="Телефон"
-            required>
-        </label>
+        <h2>Остались вопросы? Задайте их нам!</h2>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <div class="form__wrap">
+          <label>
+            <input type="text" name="name" placeholder="Имя" required>
+          </label>
+          <label>
+            <input class="form__phone" type="tel" name="phone" minlength="16" maxlength="16" placeholder="Телефон"
+              required>
+          </label>
+        </div>
         <label>
           <textarea name="question" cols="8" rows="10" placeholder="Ваш вопрос" required></textarea>
         </label>
