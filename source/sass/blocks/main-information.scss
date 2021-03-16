@@ -19,12 +19,12 @@
   padding-top: 315px;
   padding-left: 13%;
 
-  width: 50%;
+  width: 53%;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
   font-weight: 700;
-  letter-spacing: -4.5px;
+  letter-spacing: 5.5px;
   color: $white;
   text-transform: uppercase;
 
@@ -46,7 +46,7 @@
     width: 77%;
     font-size: 40px;
     line-height: 46px;
-    letter-spacing: -3px;
+    letter-spacing: 3px;
   }
 }
 
@@ -135,7 +135,7 @@
 .main-information__link {
   margin-top: 25px;
   margin-left: 18%;
-  padding: 17px;
+  padding-top: 4px;
   width: 407px;
   min-height: 55px;
 
@@ -165,6 +165,12 @@
     width: 287px;
     margin-left: 6%;
   }
+}
+
+.main-information__link:hover,
+.main-information__link:focus {
+  background-color: $white;
+  color: $accent;
 }
 
 .main-information__scroll {

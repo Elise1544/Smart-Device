@@ -1,5 +1,6 @@
 .contact-us {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   min-width: 37%;
@@ -19,14 +20,14 @@
 .contact-us li {
   margin: 0 auto;
   list-style: none;
-  padding: 0;
+  padding: 0 10px;
 
   @media (max-width: $tablet-width) {
-    margin: 0 15px;
+    margin: 0 6px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 12px;
+    margin: 0;
   }
 }
 
@@ -38,14 +39,18 @@
   }
 }
 
-.envelope {
+.contact-us__envelope {
+  fill: $accent;
+
   @media (max-width: $tablet-width) {
     width: 25px;
     height: 19px;
   }
 }
 
-.phone {
+.contact-us__phone {
+  fill: $accent;
+
   @media (max-width: $tablet-width) {
     width: 24px;
     height: 24px;

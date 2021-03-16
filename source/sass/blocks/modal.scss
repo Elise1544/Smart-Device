@@ -14,13 +14,14 @@
   padding: 8px 39px 36px 39px;
 
   background-color: $accent;
+  overflow: auto;
 }
 
 .modal .form {
   margin-left: 0;
   padding: 0;
   width: 100%;
-  min-width: 490px;
+  min-width: 450px;
 }
 
 .modal h2 {
@@ -35,12 +36,13 @@
 
 .modal p {
   margin: 8px 15px 20px 0;
+  padding-left: 0;
 
   font-size: 16px;
   line-height: 21px;
 }
 
-.modal input,
+.modal input:not([type="checkbox"]),
 .modal textarea {
   margin: 15px 0;
   padding: 12px 25px;
@@ -62,23 +64,40 @@
   width: 411px;
 }
 
-.modal .form__checkbox {
+.modal label[for="agreement"] {
+  position: relative;
+  width: 99%;
+
   margin-left: 0;
   margin-top: 24px;
   padding-left: 50px;
-
-  width: 99%;
+  letter-spacing: -1px;
 }
 
 .modal .close {
   position: absolute;
   background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 16px;
   height: 16px;
-  top: 20px;
-  right: 22px;
+  top: 14px;
+  right: 14px;
+  padding: 15px;
 
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.modal::before {
+  content: " ";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $modal-background;
+  opacity: 0.1;
+  z-index: -1;
 }

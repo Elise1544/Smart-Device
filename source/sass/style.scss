@@ -11,7 +11,6 @@
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/main-information.scss";
 @import "../sass/blocks/modal.scss";
-@import "../sass/blocks/modal-wrapper";
 @import "../sass/blocks/office.scss";
 @import "../sass/blocks/products.scss";
 @import "../sass/blocks/sections.scss";
@@ -22,6 +21,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {

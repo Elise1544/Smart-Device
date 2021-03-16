@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: 0;
     padding-left: 10px;
     padding-bottom: 11px;
@@ -19,16 +19,22 @@
 }
 
 .office h3 {
+  margin-left: 5px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .office__wrap {
   display: flex;
   flex-direction: column;
+  letter-spacing: -0.5px;
 }
 
 .office__wrap--closed {
@@ -38,7 +44,7 @@
 }
 
 .office p {
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 4px;
 
   @media (max-width: $mobile-width) {
@@ -48,8 +54,9 @@
   }
 }
 
-.office a {
+.office a:not(:first-child) {
   margin: 3px;
+  width: fit-content;
 
   @media (max-width: $tablet-width) {
     margin-left: 0;

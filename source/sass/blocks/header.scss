@@ -11,9 +11,13 @@
   }
 }
 
-.header__logo {
+.header a {
+  display: inline-block;
+  vertical-align: middle;
   margin-right: auto;
+}
 
+.header img {
   @media (max-width: $tablet-width) {
     margin-left: 25px;
   }
@@ -28,7 +32,9 @@
   }
 }
 
-.header button {
+.header .button {
+  display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   height: 100%;
   margin-right: 6px;
@@ -36,4 +42,10 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
+}
+
+.header .button:hover,
+.header .button:focus {
+  background-color: $accent;
+  border: 1px solid $accent;
 }

@@ -31,6 +31,14 @@
   }
 }
 
+.features__items:hover,
+.features__items:focus {
+  background-color: $accent;
+  color: $white;
+  fill: $white;
+  cursor: pointer;
+}
+
 .features__items h3 {
   margin: 17px 0;
 
@@ -38,18 +46,21 @@
   font-size: 24px;
   line-height: 33px;
   font-weight: 400;
-  letter-spacing: -1.2px;
   color: $accent;
 
   @media (max-width: $tablet-width) {
     margin: 7px 0;
-    letter-spacing: -1.3px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+.features__items:hover h3,
+.features__items:focus h3 {
+  color: $white;
 }
 
 .features__items p {
@@ -99,17 +110,4 @@
     width: 32px;
     height: 32px;
   }
-}
-
-.features__items:hover,
-.features__items:focus {
-  background-color: $accent;
-  color: $white;
-  fill: $white;
-  cursor: pointer;
-}
-
-.features__items h3:hover,
-.features__items h3:focus {
-  color: $white;
 }

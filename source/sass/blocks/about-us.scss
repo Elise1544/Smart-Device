@@ -46,11 +46,10 @@
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
-  letter-spacing: -2px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 22px;
-    margin-bottom: 31px;
+    margin-top: 25px;
+    margin-bottom: 27px;
 
     font-size: 32px;
     line-height: 45px;
@@ -78,7 +77,7 @@
 
   @media (max-width: $mobile-width) {
     margin-left: 5px;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     -webkit-line-clamp: 8;
     line-height: 22px;
   }
@@ -86,7 +85,6 @@
 
 .about-us a {
   margin-top: 19px;
-  padding: 15px;
 
   color: $accent;
   border: 1px solid $accent;
@@ -95,4 +93,10 @@
     margin-top: -10px;
     margin-left: 5px;
   }
+}
+
+.about-us a:hover,
+.about-us a:focus {
+  background-color: $accent;
+  color: $white;
 }

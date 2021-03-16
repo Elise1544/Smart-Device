@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 5px;
   padding: 0;
 
@@ -15,11 +16,14 @@
   line-height: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: 0.7px;
   text-align: center;
 }
 
 .button span {
-  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 13px;
   margin: 0;
+  text-align: center;
 }

@@ -3,31 +3,33 @@
   "description": "Магазин электроники",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "9.5.x",
+    "autoprefixer": "10.2.x",
     "browser-sync": "2.26.x",
-    "eslint": "^4.19.1",
-    "eslint-config-htmlacademy": "^2.0.0",
+    "eslint": "^7.22.x",
+    "eslint-config-htmlacademy": "^2.1.0",
     "gulp": "4.0.x",
-    "gulp-csso": "^3.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "4.0.x",
-    "gulp-sourcemaps": "2.6.x",
+    "gulp-postcss": "9.0.x",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "4.1.x",
+    "gulp-sourcemaps": "3.0.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "13.1.x",
+    "posthtml-include": "^1.6.2",
+    "stylelint": "13.12.x",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "eslint": "eslint",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint source/js/",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
@@ -47,10 +49,10 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "12.18.3"
   },
   "dependencies": {
-    "del": "^4.1.1",
-    "imask": "^6.0.5"
+    "del": "^6.0.0",
+    "imask": "^6.0.7"
   }
 }
