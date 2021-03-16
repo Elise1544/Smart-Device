@@ -47,7 +47,7 @@
   const sections = document.querySelector('.sections__list');
   const office = document.querySelector('.office__wrap');
 
-  document.addEventListener("DOMContentLoaded", function (evt) {
+  document.addEventListener('DOMContentLoaded', function () {
     sectionsButton.classList.add('footer__button--close');
     sections.classList.add('sections__list--closed');
     officeButton.classList.add('footer__button--close');
