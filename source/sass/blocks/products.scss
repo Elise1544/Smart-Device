@@ -1,0 +1,173 @@
+.products {
+  padding: 59px 2% 96px 2%;
+
+  background-color: $background-dark;
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 3% 40px 3%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 21px 4% 35px 3%;
+  }
+}
+
+.products h2 {
+  width: 63%;
+  margin: 32px auto;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 22px;
+    width: 87%;
+
+    letter-spacing: -1.8px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 5%;
+    width: 95%;
+
+    font-size: 28px;
+    line-height: 39px;
+    letter-spacing: 0;
+  }
+}
+
+.products ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 37px;
+
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 3px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 27px;
+  }
+}
+
+.products__items {
+  position: relative;
+  margin: 15px;
+
+  width: 20%;
+  background-size: cover;
+  padding-bottom: 25%;
+
+  @media (max-width: $tablet-width) {
+    margin: 23px 0;
+
+    min-width: 718px;
+    width: 100%;
+    height: 256px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 15px 0;
+
+    min-width: 280px;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+.products__items--production {
+  background-image: url("../img/production.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/production2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/production-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/production-tablet2x.png");
+    }
+  }
+}
+
+.products__items--installation {
+  background-image: url("../img/installation.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/installation2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/installation-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/installation-tablet2x.png");
+    }
+  }
+}
+
+.products__items--accessories {
+  background-image: url("../img/accessories.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/accessories2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/accessories-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/accessories-tablet2x.png");
+    }
+  }
+}
+
+.products__items a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.products__items h3 {
+  padding: 8% 12%;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    padding: 3% 6%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 12%;
+  }
+}
+
+.products__items h3::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $accent;
+  width: 63px;
+  height: 63px;
+  right: 0;
+  bottom: 0;
+}

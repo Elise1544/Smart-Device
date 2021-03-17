@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+
+  list-style: none;
+  padding: 0;
+  margin: 48px 33px;
+
+  @media (max-width: $tablet-width) {
+    margin: 18px 10px 20px auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 10px auto 20px auto;
+  }
+}
+
+.social li {
+  position: relative;
+  margin: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+}
+
+.social__link {
+  width: 27px;
+  height: 27px;
+  fill: #cdcdcd;
+}
+
+.social__link:hover,
+.social__link:focus {
+  fill: $accent;
+}
