@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  padding: 0;
+
+  width: 180px;
+  min-height: 45px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: inherit;
+  color: inherit;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.button span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 13px;
+  margin: 0;
+  text-align: center;
+}
