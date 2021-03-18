@@ -1,0 +1,14 @@
+.modal-wrapper {
+  display: none;
+}
+
+.modal-wrapper--active {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $modal-background;
+  opacity: 0.1;
+}

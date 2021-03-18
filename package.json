@@ -29,7 +29,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "eslint": "eslint",
-    "test": "npm run editorconfig && npm run stylelint && npm run eslint source/js/",
+    "test": "npm run editorconfig && npm run eslint source/js/ && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
