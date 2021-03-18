@@ -1,5 +1,5 @@
 {
-  "name": "Smart Device",
+  "name": "smart-device",
   "description": "Магазин электроники",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.0",
