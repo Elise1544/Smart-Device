@@ -188,3 +188,8 @@
     display: none;
   }
 }
+
+.main-information__scroll:hover,
+.main-information__scroll:focus {
+  color: $accent;
+}

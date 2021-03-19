@@ -142,6 +142,11 @@
   padding: 0;
 }
 
+.products__items a:hover,
+.products__items a:focus {
+  color: $accent;
+}
+
 .products__items h3 {
   padding: 8% 12%;
 

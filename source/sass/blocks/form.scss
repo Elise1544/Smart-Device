@@ -101,6 +101,13 @@
   }
 }
 
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  border: 1px solid $white;
+}
+
 .form input::placeholder,
 .form textarea::placeholder {
   color: $white;

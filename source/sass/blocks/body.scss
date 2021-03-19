@@ -1,7 +1,7 @@
 .body {
   position: relative;
   display: grid;
-  grid-template-rows: min-content 1 fr min-content;
+  grid-template-rows: 1fr min-content;
   min-height: 100%;
   margin: 0;
   padding: 0;

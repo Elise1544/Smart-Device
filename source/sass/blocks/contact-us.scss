@@ -20,7 +20,8 @@
 .contact-us li {
   margin: 0 auto;
   list-style: none;
-  padding: 0 10px;
+  padding: 10px;
+  padding-top: 0;
 
   @media (max-width: $tablet-width) {
     margin: 0 6px;

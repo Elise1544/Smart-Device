@@ -17,6 +17,15 @@
   margin-right: auto;
 }
 
+.header a:hover,
+.header a:focus {
+  color: $accent;
+}
+
+.header__logo {
+  cursor: auto;
+}
+
 .header img {
   @media (max-width: $tablet-width) {
     margin-left: 25px;
@@ -47,5 +56,6 @@
 .header .button:hover,
 .header .button:focus {
   background-color: $accent;
+  color: $white;
   border: 1px solid $accent;
 }
